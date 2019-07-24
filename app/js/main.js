@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             text: null
         },
         data: {
-            googleSpreadsheetKey: '1YOKb5l2VM4aAB2r20N_1aT_1vEajYrP3U-U3A6lZbC0'
+            googleSpreadsheetKey: '1hrISQBq6eBYa0WuHyGtFq6zBsLn_-GAfNXHdpplJ-P0'
         },
         legend: {
             align: 'right',
@@ -28,8 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         xAxis: {
             labels: {
+                reserveSpace: true,
+                x: -5,
+                y: 0,
+                align: 'right',
                 style: {
-                    whiteSpace: 'nowrap'
+                    // whiteSpace: 'nowrap'
                 }
             }
         },
@@ -38,14 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
             labels: {
                 useHTML: true,
                 overflow: 'allow'
-            }
+            },
+            max: 6
         },
         credits: {
             enabled: false
         },
         tooltip: {
             shadow: false,
-            padding: 10
+            padding: 10,
+            valuePrefix: '$'
         },
         responsive: {
             rules: [{
@@ -62,6 +68,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 tooltip: {
                     enabled: false
+                },
+                xAxis: {
+                    labels: {
+                        reserveSpace: false,
+                        style: {
+                            whiteSpace: 'nowrap'
+                        },
+                        x: 5,
+                        y: -22,
+                        align: 'left'
+                    }
                 }
               }
             }]
