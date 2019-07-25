@@ -1,9 +1,15 @@
+// adds social class to get social chart
+// let element = document.getElementsByClassName("chart-area");
+// for(var i = 0; i < element.length; i++)
+// {
+//     element[i].className += " social";
+// }
+
 Highcharts.setOptions({
     lang: {
       thousandsSep: ','
     }
 });
-
 
 document.addEventListener('DOMContentLoaded', function () {
     const myChart = Highcharts.chart('chart-container', {
