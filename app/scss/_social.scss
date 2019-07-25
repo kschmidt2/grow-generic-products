@@ -14,9 +14,12 @@
     }
     & .chart-title-social {
         display: block;
+        margin-left: 42px;
     }
     & .chart-container {
         max-height: 260px;
+        margin-left: 42px;
+        width: 90%;
     }
     & .chart-note, & .chart-source  {
         color: $slate-secondary-6;
