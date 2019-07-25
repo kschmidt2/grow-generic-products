@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
         useHTML: true,
         overflow: 'allow'
       },
-      max: 6
+      max: 6,
+      tickAmount: 7
     },
     credits: {
       enabled: false
